@@ -15,7 +15,7 @@ echo "sa - South America (Sao Paulo)"
 echo "jp - Japan (Tokyo)"
 echo "in - India (Mumbai)"
 read -p "choose ngrok region: " CRP
-./ngrok tcp --region $CRP 3388 &>/dev/null &
+./ngrok tcp --region $CRP 5901 &>/dev/null &
 echo "===================================="
 echo "Install RDP"
 echo "===================================="
@@ -36,4 +36,4 @@ echo "Keep support akuh.net thank you"
 echo "Wait 1 minute to finish bot"
 echo "===================================="
 echo "===================================="
-docker run --rm -p 3388:3389 danielguerra/ubuntu-xrdp:20.04 > /dev/null 2>&1
+docker run --rm -p 5901:5901 danielguerra/ubuntu-xrdp:20.04 > /dev/null 2>&1
